@@ -11,7 +11,6 @@ use App\Models\City;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
-use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -22,7 +21,6 @@ class CityResource extends Resource
     protected static ?string $model = City::class;
     protected static ?string $modelLabel = 'Ciudad';
     protected static ?string $pluralModelLabel = 'Ciudades';
-
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Home;
 
     protected static string | UnitEnum | null $navigationGroup = 'Sistema de administración';
